@@ -2,11 +2,12 @@
 export async function onRequest(context) {
   const origin = new URL(context.request.url).origin;
   const config = {
+    
     sites: [
       {
         key: "huangdou",
         name: "黄豆短剧",
-        type: 1,
+        type: 4,
         api: origin+'/api',
         searchable: 1,
         quickSearch: 1,
